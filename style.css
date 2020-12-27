@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+/*General styles*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	color: hsl(192, 100%, 9%);
+}
+
+h1,h2{
+	font-family: 'Poppins', sans-serif;
+}
+
+p{
+	opacity: 0.5;
+}
+
+img{
+	max-width: 100%;
+}
+
+.container{
+	padding: 0 20px;
+	margin: 0 auto;
+	width: 1000px;
+	max-width: 100%;
+}
+
+.center{
+	text-align: center;
+}
+
+.right{
+	text-align: right;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+.flex > div{
+	flex: 1;
+}
+
+.align-start{
+	align-items: flex-start;
+}
+
+.btn{
+	border-radius: 50px;
+	border: none;
+	background-color: #fff;
+	padding: 15px 60px;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.09);
+	color: hsl(192, 100%, 9%);
+}
+
+.btn:hover{
+	opacity: 80%;
+}
+
+.btn-primary{
+	background-color: hsl(322, 100%, 66%);
+	color: #fff;
+}
+
+/*Header*/
+header{
+	background-image: url(images/bg-hero-desktop.svg);
+	background-size: cover;
+	background-position: center center;
+	background-color: hsl(193, 100%, 96%);
+	padding: 40px 0;
+}
+
+nav{
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+header p{
+	opacity: 0.7;
+}
+
+main{
+	margin: 100px 0;
+}
+
+.box{
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.09);
+	padding: 50px 20px 50px 50px;
+	margin-bottom: 40px;
+}
+
+.box img{
+	width: 80%;
+}
+
+.box{
+
+}
+
+.small-box{
+	display: inline-block;
+}
+
+/*Footer*/
+footer{
+	background-color: hsl(192, 100%, 9%);
+	color: hsl(193, 100%, 96%);
+	margin-top: -110px;
+	padding: 120px 0 60px;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer ul li{
+	margin-bottom: 15px;
+}
+
+footer li img{
+	margin-right: 10px;
+}
+
+footer .circle{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+}
+
+footer .flex{
+	align-items: flex-start;
+}
+
+footer .flex div{
+	width: 100%;
+	display: block;
+}
+
+footer .flex .wide{
+	flex: 0 0 45%;
+	max-width: 45%;
+}
+
+footer ul li.flex div:nth-child(1){
+	flex: none;
+	width: 40px;
+}
+
+footer p{
+	text-align: right;
+}
+
+@media screen and (max-width: 768px){
+	.flex{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header .flex:nth-child(2){
+		padding: 0 50px;
+	}
+
+	header p{
+		margin-bottom: 40px;
+	}
+
+	header div>div:nth-child(2){
+		margin-top: 40px;
+	}
+
+	nav.flex{
+		flex-direction: initial;
+		justify-content: space-between;
+	}
+
+	.logo{
+		text-align: left;
+	}
+
+	.logo img{
+		max-width: 60%;
+	}
+
+	footer .flex{
+		text-align: initial;
+	}
+
+	footer .flex .wide{
+		/*flex: 0 0 auto;*/
+		max-width: 100%;
+	}
+
+	footer ul li.flex{
+		flex-direction: row;
+	}
+
+	footer ul.flex{
+		flex-direction: row;
+		justify-content: center;
+		padding: 0;
+	}
+
+	footer div:nth-child(3) ul{
+		margin: 0;
+	}
+
+
+	footer p{
+		text-align: center;
+	}
+
+	main .flex:nth-child(odd){
+		flex-direction: column-reverse;
+	}
+
+	.box{
+		padding: 40px;
+	}
+
+	.btn{
+		font-size: 14px;
+	}
+
+	.small-box{
+		padding: 30px;
+		
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+}
+
+@media screen and (max-width: 433px){
+	nav .btn{
+		margin: 0;
+		padding: 5px 25px;
+		font-size: 14px;
+	}
+}
